@@ -1,0 +1,265 @@
+/* Service Page - Aluminium Fittings */
+
+.service-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 40px 40px 40px;
+}
+
+.service-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-header h1 {
+    font-size: 42px;
+    color: #070529;
+    margin-bottom: 15px;
+}
+
+.service-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.service-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 40px;
+}
+
+.service-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-details h2 {
+    font-size: 32px;
+    color: #070529;
+    margin-bottom: 15px;
+}
+
+.service-details p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.service-features {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.service-features h3 {
+    color: #070529;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.service-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-features ul li {
+    padding: 8px 0;
+    color: #555;
+    font-size: 14px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.service-features ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #38bdf8;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.process-section {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.process-section h3 {
+    color: #070529;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: #070529;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #555;
+    font-size: 14px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background: #0ea5e9;
+}
+
+.gallery-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid #eee;
+}
+
+.gallery-section h2 {
+    font-size: 28px;
+    color: #070529;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-container {
+        padding: 100px 20px 20px 20px;
+    }
+
+    .service-header h1 {
+        font-size: 32px;
+    }
+
+    .service-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-details h2 {
+        font-size: 24px;
+    }
+
+    .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .gallery-item img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-container {
+        padding: 80px 15px 15px 15px;
+    }
+
+    .service-header h1 {
+        font-size: 24px;
+    }
+
+    .service-header p {
+        font-size: 16px;
+    }
+
+    .service-details h2 {
+        font-size: 20px;
+    }
+
+    .service-details p {
+        font-size: 14px;
+    }
+
+    .service-features,
+    .process-section {
+        padding: 15px;
+    }
+
+    .process-steps {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery-item img {
+        height: 150px;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        width: 100%;
+        text-align: center;
+    }
+}

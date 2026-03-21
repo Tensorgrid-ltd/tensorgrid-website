@@ -1,0 +1,214 @@
+/* Glass Fittings Product Page */
+
+.product-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px 40px 40px;
+}
+
+.product-header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-header h1 {
+    font-size: 42px;
+    color: #070529;
+    margin-bottom: 10px;
+}
+
+.product-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.product-details h2 {
+    font-size: 32px;
+    color: #070529;
+    margin-bottom: 15px;
+}
+
+.product-details p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.specifications {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.specifications h3 {
+    font-size: 18px;
+    color: #070529;
+    margin-bottom: 10px;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: #555;
+}
+
+.spec-item:last-child {
+    border-bottom: none;
+}
+
+.spec-label {
+    font-weight: bold;
+    color: #070529;
+}
+
+.features h3 {
+    font-size: 18px;
+    color: #070529;
+    margin-bottom: 10px;
+}
+
+.features ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.features ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.features ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.related-products h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #070529;
+    margin-bottom: 30px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product-card-content {
+    padding: 15px;
+}
+
+.product-card-content h3 {
+    font-size: 16px;
+    color: #070529;
+    margin-bottom: 5px;
+}
+
+.product-card-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+.navigation {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.nav-button {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 10px 18px;
+    background-color: #38bdf8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #0ea5e9;
+}
+
+footer {
+    background: #070529;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    .product-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media(max-width:480px) {
+    .product-header h1 {
+        font-size: 28px;
+    }
+    .product-header p {
+        font-size: 16px;
+    }
+}

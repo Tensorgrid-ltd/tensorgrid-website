@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Tensorgrid Ltd</title>
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+
+<div class="contact-bar">
+    <a href="https://wa.me/254792729114">WhatsApp: +254792729114</a> |
+    <a href="mailto:sales@tensorgrid.co.ke">Email: sales@tensorgrid.co.ke</a> |
+    <a href="https://tiktok.com/@tensorgrid">TikTok: @tensorgrid</a> | <a href="https://instagram.com/tensorgrid">Instagram: @tensorgrid</a> |
+    <a href="https://facebook.com/tensorgrid">Facebook: /tensorgrid</a> |
+    <a href="https://x.com/tensorgrid">X: @tensorgrid</a>
+</div>
+
+<header>
+    <div class="logo">
+        <img src="../assets/logo.svg">
+        <h1>Tensorgrid Ltd</h1>
+    </div>
+
+    <a href="../index.html" class="home-button">Home</a>
+    
+</header>
+
+
+<div class="contact-container">
+
+<div class="contact-header">
+<h1>Contact Us</h1>
+<p>Get in touch with us for your engineering and glass solutions needs. We're here to help!</p>
+</div>
+
+<div class="contact-content">
+<div class="contact-info">
+<h2>Contact Information</h2>
+
+<div class="info-block">
+<h3>Email</h3>
+<p>sales@tensorgrid.co.ke</p>
+</div>
+
+<div class="info-block">
+<h3>Phone</h3>
+<p>+254792729114</p>
+</div>
+
+<div class="info-block">
+<h3>Location</h3>
+<p>Nairobi, Kenya</p>
+</div>
+</div>
+
+<div class="contact-form">
+<h2>Send us a Message</h2>
+<div id="form-alert" class="success-message" role="alert">Message sent successfully.</div>
+<form id="contactForm" action="#" method="post" novalidate>
+<div class="form-group">
+<label for="name">Name</label>
+<input type="text" id="name" name="name" required>
+<div class="field-error" id="nameError"></div>
+</div>
+
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+<div class="field-error" id="emailError"></div>
+</div>
+
+<div class="form-group">
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+<div class="field-error" id="messageError"></div>
+</div>
+
+<button type="submit" class="submit-btn">Send Message</button>
+</form>
+</div>
+</div>
+
+</div>
+
+<footer>
+<a href="../index.html" class="home-link">Home</a>
+<p>Tensorgrid Ltd</p>
+</footer>
+
+<script>
+    const form = document.getElementById('contactForm');
+    const formAlert = document.getElementById('form-alert');
+
+    function validateField(fieldId, errorId, message) {
+        const field = document.getElementById(fieldId);
+        const error = document.getElementById(errorId);
+
+        if (!field.value.trim()) {
+            field.classList.add('invalid');
+            error.textContent = message;
+            error.style.display = 'block';
+            return false;
+        }
+
+        field.classList.remove('invalid');
+        error.textContent = '';
+        error.style.display = 'none';
+        return true;
+    }
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        formAlert.style.display = 'none';
+        formAlert.classList.remove('error-message');
+        formAlert.classList.remove('success-message');
+
+        const validName = validateField('name', 'nameError', 'Name is required.');
+        const validEmail = validateField('email', 'emailError', 'Email is required.');
+        const validMessage = validateField('message', 'messageError', 'Message is required.');
+
+        if (!validName || !validEmail || !validMessage) {
+            formAlert.textContent = 'Please fill in all required fields.';
+            formAlert.classList.add('error-message');
+            formAlert.style.display = 'block';
+            return;
+        }
+
+        const nameValue = document.getElementById('name').value.trim();
+        const emailValue = document.getElementById('email').value.trim();
+        const messageValue = document.getElementById('message').value.trim();
+
+        const whatsappMessage = `Hello Tensorgrid Ltd,\n\nName: ${nameValue}\nEmail: ${emailValue}\nMessage: ${messageValue}`;
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+        const whatsappNumber = '254792729114';
+        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+        window.open(whatsappURL, '_blank');
+
+        formAlert.textContent = 'Message sent successful.';
+        formAlert.classList.remove('error-message');
+        formAlert.classList.add('success-message');
+        formAlert.style.display = 'block';
+        form.reset();
+    });
+
+    document.addEventListener('click', function (event) {
+        if (formAlert.style.display === 'block') {
+            formAlert.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,161 @@
+/* About Page Styles */
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 40px 40px 40px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-header h1 {
+    font-size: 42px;
+    color: #070529;
+    margin-bottom: 15px;
+}
+
+.about-header p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about-content img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h2 {
+    font-size: 32px;
+    color: #070529;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.mission {
+    background: #f0f0f0;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.mission h3 {
+    font-size: 24px;
+    color: #070529;
+    margin-bottom: 15px;
+}
+
+.team-section {
+    margin-top: 40px;
+}
+
+.team-section h2 {
+    font-size: 32px;
+    color: #070529;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    color: #070529;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 100px 20px 20px 20px;
+    }
+
+    .about-header h1 {
+        font-size: 32px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-section h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        padding: 80px 15px 15px 15px;
+    }
+
+    .about-header h1 {
+        font-size: 24px;
+    }
+
+    .about-header p {
+        font-size: 16px;
+    }
+
+    .about-text h2 {
+        font-size: 20px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission {
+        padding: 20px;
+    }
+}
