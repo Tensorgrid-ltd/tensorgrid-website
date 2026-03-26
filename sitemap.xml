@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Pages -->
+  <url><loc>https://www.tensorgrid.co.ke/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.tensorgrid.co.ke/about</loc><priority>0.8</priority></url>
+  <url><loc>https://www.tensorgrid.co.ke/projects</loc><priority>0.8</priority></url>
+  <url><loc>https://www.tensorgrid.co.ke/contact</loc><priority>0.8</priority></url>
+
+  <!-- Services -->
+  <url><loc>https://www.tensorgrid.co.ke/services/aluminium-fittings</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/services/balcony</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/services/staircase-balustrades</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/services/curtain-walling</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/services/mirror-installation</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/services/office-partition</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/services/putty-work</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/services/shower-cubicles</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/services/skylight</loc></url>
+
+  <!-- Products -->
+  <url><loc>https://www.tensorgrid.co.ke/products/glass-products</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/products/glass-blocks</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/products/perspex</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/products/polysheet</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/products/glass-fittings</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/products/putty</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/products/mirrors</loc></url>
+  <url><loc>https://www.tensorgrid.co.ke/products/louvers</loc></url>
+
+</urlset>
